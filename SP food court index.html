@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>SP Food Court 6</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+    <style>body {background-color: wheat;background-position: center;background-size: cover ;background-repeat: no-repeat;}</style></style>
+<style>
+table.programs{
+    background: white;
+    border: 15px outset rgb(151, 151, 151);
+    border-collapse: collapse;
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;  
+}
+
+table.programs tr{
+    height: 25px;
+}
+
+table.programs th, table.programs td{
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;    
+}
+
+/* Table Caption Styles */
+table.programs caption {
+    caption-side: bottom;
+    text-align: center;
+}
+/* Table Header Styles */
+table.programs thead{
+    color:white;
+    background-color: rgb(177, 112, 16);
+}
+table.programs thead th:first-of-type{
+    color:white;
+    background-color: rgb(184, 38, 38);
+}
+table.programs thead th:nth-of-type(7),table.programs thead th:nth-of-type(8) {
+    color:white;
+    background-color: rgb(0, 143, 153);
+}
+
+
+
+
+
+
+
+
+/* Table Footer Styles */
+table.programs tfoot{
+    color:white;
+    background-color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+
+}
+
+.topnav button:hover {
+  background-color: green;
+  color: blue;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="container-fluid">
+         
+        <!-- to add image -->
+        <h1 style="color: green;text-align: center;font-weight: bold;background-color: wheat;"> Welcome to SP Food Court 6 </h1>
+        
+        
+      </div>
+</header>
+
+
+
+
+
+<div class="container-fluid">
+
+    <section id="main">
+    <div class="topnav">
+        <nav>
+       
+        <input type="text" placeholder="Enter stall name " name="stall name"style="cursor: pointer;">
+        <button type="submit" onclick="search()" style="cursor: pointer;" > search</button>
+  
+      
+        <button type="submit" onclick="sort()"style="cursor: pointer;">sort price in ascending order</button>
+        <button type="submit" onclick="sort()"style="cursor: pointer;">sort price in descending order</button>
+        </nav>
+    </div>
+
+
+    <table class="programs">
+        <caption>Singapore Polytechnic</caption>
+        <thead>
+            <tr>
+              <th scope="col">Menu ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Prices</th>
+              <th scope="col">Stall Name</th>
+              <th scope="col">Image</th>
+              <th scope="col">Category ID</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+                  <td colspan="8"> Dear students, Last order will be at 9:30 p.m.</td>
+            </tr>
+      </tfoot>
+      <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>fried chicken</td>
+                <td>spicy and crispy chicken</td>
+                <td>$24.00</td>
+                <td>Western Stall</td>
+                <td><img src="images/fried chicken.jpg"style="width: 10em;height:10em;"></td>
+                <td> 1</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>fried chicken</td>
+                <td>spicy and crispy chicken</td>
+                <td>$24.00</td>
+                <td>Western Stall</td>
+                <td><img src="images/fish fillet.jpg"style="width: 10em;height:10em;"></td>
+                <td> 1</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>fried chicken</td>
+                <td>spicy and crispy chicken</td>
+                <td>$24.00</td>
+                <td>Western Stall</td>
+                <td><img src="images/fried chicken.jpg"style="width: 10em;height:10em;"></td>
+                <td> 1</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>fried chicken</td>
+                <td>spicy and crispy chicken</td>
+                <td>$24.00</td>
+                <td>Western Stall</td>
+                <td><img src="images/fried chicken.jpg"style="width: 10em;height:10em;"></td>
+                <td> 1</td>
+            </tr>
+             
+            
+        </tbody>
+</table>
+</section>
+
+</div>
+</body>
+
+
+
+<div class="container-fluid">
+<footer>
+    <p class="footer" style="font-size: 15px;background-color: wheat;box-shadow: yellowgreen;text-align: center;padding-bottom: 0.5em;padding-top: 0.5em;">&copy;SP Food Court 6 . All right reserved. </p>
+</footer>
+</div>
+</html>
